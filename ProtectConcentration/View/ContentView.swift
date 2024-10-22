@@ -17,12 +17,12 @@ struct ContentView: View {
             
             OnePageView()
                 .tabItem {
-                    Label("理由", systemImage: "gear")
+                    Label("何する", systemImage: "list.bullet")
                 }.tag(1)
             
             TwoPageView()
                 .tabItem {
-                    Label("アイデア", systemImage: "gear")
+                    Label("クイックメモ", systemImage: "lightbulb.min.fill")
                 }.tag(2)
             
             ThreePageView()
@@ -30,7 +30,11 @@ struct ContentView: View {
                     Label("設定", systemImage: "gear")
                 }.tag(3)
             
+        }//TabView
+        .onAppear(){
+            UITabBar.appearance().backgroundColor = .parts
         }
+        .accentColor(Color.green)
     }
 }
 

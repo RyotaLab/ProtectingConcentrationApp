@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
+
+enum Field: Hashable {
+    case inputReason
+    case ideaMemo
+}

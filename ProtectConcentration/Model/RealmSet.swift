@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import RealmSwift
+
+
+class OpenReasonList: Object, Identifiable {
+    
+    @Persisted(primaryKey: true) var id: ObjectId
+    @Persisted var reason: String
+    
+    override class func primaryKey() -> String? {
+        "id"
+    }
+}
+
+

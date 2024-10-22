@@ -7,10 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BDF035BB6ABAD45DB2F9885 /* Pods_ProtectConcentration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895BEE8AA029A0161888EAE1 /* Pods_ProtectConcentration.framework */; };
 		2EBDE4682CC369A100C3D3FA /* ProtectConcentrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4672CC369A100C3D3FA /* ProtectConcentrationApp.swift */; };
 		2EBDE46A2CC369A100C3D3FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4692CC369A100C3D3FA /* ContentView.swift */; };
 		2EBDE46C2CC369A400C3D3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBDE46B2CC369A400C3D3FA /* Assets.xcassets */; };
 		2EBDE46F2CC369A400C3D3FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBDE46E2CC369A400C3D3FA /* Preview Assets.xcassets */; };
+		2EBDE4792CC36A4000C3D3FA /* OnePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4782CC36A4000C3D3FA /* OnePageView.swift */; };
+		2EBDE47B2CC36A4A00C3D3FA /* TwoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE47A2CC36A4A00C3D3FA /* TwoPageView.swift */; };
+		2EBDE47D2CC36A5700C3D3FA /* ThreePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE47C2CC36A5700C3D3FA /* ThreePageView.swift */; };
+		2EBDE47F2CC36E9800C3D3FA /* RealmSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE47E2CC36E9800C3D3FA /* RealmSet.swift */; };
+		2EBDE4812CC37A5A00C3D3FA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4802CC37A5A00C3D3FA /* Extension.swift */; };
+		2EBDE4842CC3AA4200C3D3FA /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4832CC3AA4200C3D3FA /* IntroductionView.swift */; };
+		2EBDE4882CC3AA5B00C3D3FA /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4872CC3AA5B00C3D3FA /* DonationView.swift */; };
+		2EBDE48A2CC3AB1700C3D3FA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4892CC3AB1700C3D3FA /* NotificationManager.swift */; };
+		2EBDE48C2CC3AB3800C3D3FA /* MakeNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE48B2CC3AB3800C3D3FA /* MakeNotificationView.swift */; };
+		2EBDE48E2CC3AB7600C3D3FA /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE48D2CC3AB7600C3D3FA /* RecommendationView.swift */; };
+		2EBDE4922CC49B2000C3D3FA /* PerchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4912CC49B2000C3D3FA /* PerchaseManager.swift */; };
+		2EBDE4952CC4B67500C3D3FA /* SecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDE4942CC4B67500C3D3FA /* SecretView.swift */; };
+		2EBDE4982CC4D5BF00C3D3FA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBDE4972CC4D5BF00C3D3FA /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,24 @@
 		2EBDE4692CC369A100C3D3FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2EBDE46B2CC369A400C3D3FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBDE46E2CC369A400C3D3FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EBDE4782CC36A4000C3D3FA /* OnePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePageView.swift; sourceTree = "<group>"; };
+		2EBDE47A2CC36A4A00C3D3FA /* TwoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPageView.swift; sourceTree = "<group>"; };
+		2EBDE47C2CC36A5700C3D3FA /* ThreePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePageView.swift; sourceTree = "<group>"; };
+		2EBDE47E2CC36E9800C3D3FA /* RealmSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSet.swift; sourceTree = "<group>"; };
+		2EBDE4802CC37A5A00C3D3FA /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2EBDE4832CC3AA4200C3D3FA /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		2EBDE4872CC3AA5B00C3D3FA /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
+		2EBDE4892CC3AB1700C3D3FA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		2EBDE48B2CC3AB3800C3D3FA /* MakeNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNotificationView.swift; sourceTree = "<group>"; };
+		2EBDE48D2CC3AB7600C3D3FA /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		2EBDE4912CC49B2000C3D3FA /* PerchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerchaseManager.swift; sourceTree = "<group>"; };
+		2EBDE4932CC49C8C00C3D3FA /* MainConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainConfiguration.storekit; sourceTree = "<group>"; };
+		2EBDE4942CC4B67500C3D3FA /* SecretView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretView.swift; sourceTree = "<group>"; };
+		2EBDE4962CC4D48500C3D3FA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2EBDE4972CC4D5BF00C3D3FA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		895BEE8AA029A0161888EAE1 /* Pods_ProtectConcentration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtectConcentration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E23919096C69167B0E4C76F /* Pods-ProtectConcentration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtectConcentration.release.xcconfig"; path = "Target Support Files/Pods-ProtectConcentration/Pods-ProtectConcentration.release.xcconfig"; sourceTree = "<group>"; };
+		C123C120C89FC36ADEFB9699 /* Pods-ProtectConcentration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtectConcentration.debug.xcconfig"; path = "Target Support Files/Pods-ProtectConcentration/Pods-ProtectConcentration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDF035BB6ABAD45DB2F9885 /* Pods_ProtectConcentration.framework in Frameworks */,
+				2EBDE4982CC4D5BF00C3D3FA /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +69,11 @@
 		2EBDE45B2CC369A100C3D3FA = {
 			isa = PBXGroup;
 			children = (
+				2EBDE4962CC4D48500C3D3FA /* PrivacyInfo.xcprivacy */,
 				2EBDE4662CC369A100C3D3FA /* ProtectConcentration */,
 				2EBDE4652CC369A100C3D3FA /* Products */,
+				C5F031DAA3D3B9942BBA3924 /* Pods */,
+				EC20B0705388B0C9561599FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				2EBDE4672CC369A100C3D3FA /* ProtectConcentrationApp.swift */,
-				2EBDE4692CC369A100C3D3FA /* ContentView.swift */,
+				2EBDE4752CC369BD00C3D3FA /* Model */,
+				2EBDE4762CC369C900C3D3FA /* View */,
+				2EBDE4772CC369CE00C3D3FA /* Controller */,
 				2EBDE46B2CC369A400C3D3FA /* Assets.xcassets */,
 				2EBDE46D2CC369A400C3D3FA /* Preview Content */,
+				2EBDE4932CC49C8C00C3D3FA /* MainConfiguration.storekit */,
 			);
 			path = ProtectConcentration;
 			sourceTree = "<group>";
@@ -67,6 +107,66 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2EBDE4752CC369BD00C3D3FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EBDE47E2CC36E9800C3D3FA /* RealmSet.swift */,
+				2EBDE4802CC37A5A00C3D3FA /* Extension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EBDE4762CC369C900C3D3FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EBDE4692CC369A100C3D3FA /* ContentView.swift */,
+				2EBDE4782CC36A4000C3D3FA /* OnePageView.swift */,
+				2EBDE47A2CC36A4A00C3D3FA /* TwoPageView.swift */,
+				2EBDE4822CC3AA2500C3D3FA /* ThreeTab */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2EBDE4772CC369CE00C3D3FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EBDE4892CC3AB1700C3D3FA /* NotificationManager.swift */,
+				2EBDE4912CC49B2000C3D3FA /* PerchaseManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2EBDE4822CC3AA2500C3D3FA /* ThreeTab */ = {
+			isa = PBXGroup;
+			children = (
+				2EBDE47C2CC36A5700C3D3FA /* ThreePageView.swift */,
+				2EBDE4832CC3AA4200C3D3FA /* IntroductionView.swift */,
+				2EBDE48D2CC3AB7600C3D3FA /* RecommendationView.swift */,
+				2EBDE48B2CC3AB3800C3D3FA /* MakeNotificationView.swift */,
+				2EBDE4872CC3AA5B00C3D3FA /* DonationView.swift */,
+				2EBDE4942CC4B67500C3D3FA /* SecretView.swift */,
+			);
+			path = ThreeTab;
+			sourceTree = "<group>";
+		};
+		C5F031DAA3D3B9942BBA3924 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C123C120C89FC36ADEFB9699 /* Pods-ProtectConcentration.debug.xcconfig */,
+				8E23919096C69167B0E4C76F /* Pods-ProtectConcentration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC20B0705388B0C9561599FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EBDE4972CC4D5BF00C3D3FA /* StoreKit.framework */,
+				895BEE8AA029A0161888EAE1 /* Pods_ProtectConcentration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EBDE4722CC369A400C3D3FA /* Build configuration list for PBXNativeTarget "ProtectConcentration" */;
 			buildPhases = (
+				09773C5CC0300F0F81C1305E /* [CP] Check Pods Manifest.lock */,
 				2EBDE4602CC369A100C3D3FA /* Sources */,
 				2EBDE4612CC369A100C3D3FA /* Frameworks */,
 				2EBDE4622CC369A100C3D3FA /* Resources */,
+				BC3B108AF8AEED195F334673 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -104,11 +206,11 @@
 			};
 			buildConfigurationList = 2EBDE45F2CC369A100C3D3FA /* Build configuration list for PBXProject "ProtectConcentration" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ja,
 			);
 			mainGroup = 2EBDE45B2CC369A100C3D3FA;
 			productRefGroup = 2EBDE4652CC369A100C3D3FA /* Products */;
@@ -132,13 +234,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09773C5CC0300F0F81C1305E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProtectConcentration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC3B108AF8AEED195F334673 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProtectConcentration/Pods-ProtectConcentration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProtectConcentration/Pods-ProtectConcentration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProtectConcentration/Pods-ProtectConcentration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2EBDE4602CC369A100C3D3FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EBDE4882CC3AA5B00C3D3FA /* DonationView.swift in Sources */,
+				2EBDE47D2CC36A5700C3D3FA /* ThreePageView.swift in Sources */,
+				2EBDE48A2CC3AB1700C3D3FA /* NotificationManager.swift in Sources */,
+				2EBDE47F2CC36E9800C3D3FA /* RealmSet.swift in Sources */,
+				2EBDE4812CC37A5A00C3D3FA /* Extension.swift in Sources */,
 				2EBDE46A2CC369A100C3D3FA /* ContentView.swift in Sources */,
+				2EBDE4952CC4B67500C3D3FA /* SecretView.swift in Sources */,
+				2EBDE4792CC36A4000C3D3FA /* OnePageView.swift in Sources */,
+				2EBDE48C2CC3AB3800C3D3FA /* MakeNotificationView.swift in Sources */,
+				2EBDE47B2CC36A4A00C3D3FA /* TwoPageView.swift in Sources */,
 				2EBDE4682CC369A100C3D3FA /* ProtectConcentrationApp.swift in Sources */,
+				2EBDE4842CC3AA4200C3D3FA /* IntroductionView.swift in Sources */,
+				2EBDE48E2CC3AB7600C3D3FA /* RecommendationView.swift in Sources */,
+				2EBDE4922CC49B2000C3D3FA /* PerchaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -197,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -245,7 +401,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -254,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -266,20 +422,24 @@
 		};
 		2EBDE4732CC369A400C3D3FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C123C120C89FC36ADEFB9699 /* Pods-ProtectConcentration.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = AppIcon1;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProtectConcentration/Preview Content\"";
 				DEVELOPMENT_TEAM = 97QJ6S5587;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "すぐメモ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,28 +447,36 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tanabi.ProtectConcentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2EBDE4742CC369A400C3D3FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E23919096C69167B0E4C76F /* Pods-ProtectConcentration.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = AppIcon1;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProtectConcentration/Preview Content\"";
 				DEVELOPMENT_TEAM = 97QJ6S5587;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "すぐメモ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +484,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tanabi.ProtectConcentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
