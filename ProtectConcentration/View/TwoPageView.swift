@@ -15,7 +15,12 @@ struct TwoPageView: View {
     
     @FocusState private var focusedField: Field?
     
+    let screenHeight: CGFloat
+    
     init() {
+        let screenSize = UIScreen.main.bounds
+        self.screenHeight = screenSize.height
+        
         if let memoRecord = UserDefaults.standard.string(forKey: "ideaMemo"){
             _ideaMemo = State(initialValue: memoRecord)
         }else{
@@ -27,26 +32,25 @@ struct TwoPageView: View {
         NavigationStack{
             ZStack{
                 Color.background
-                ScrollView(showsIndicators: false){
-                    TextEditor(text: $ideaMemo)
-                        .focused($focusedField, equals: .ideaMemo)
-                        .frame(minHeight: 200) // 初期の高さを設定
-                        .frame(maxHeight: .infinity) // 無限大に広がるようにする
-                        .foregroundColor(.text)
-                        .overlay(alignment: .topLeading) {
-                            if ideaMemo.isEmpty {
-                                Text("Memo")
-                                    .allowsHitTesting(false) // タップ判定を無効化
-                                    .foregroundColor(Color(uiColor: .placeholderText))
-                                    .padding(6)
-                            }
+                
+                
+                TextEditor(text: $ideaMemo)
+                    .focused($focusedField, equals: .ideaMemo)
+                    .frame(minHeight: screenHeight) // 初期の高さを設定
+                    .frame(maxHeight: .infinity) // 無限大に広がるようにする
+                    .foregroundColor(.text)
+                    .overlay(alignment: .topLeading) {
+                        if ideaMemo.isEmpty {
+                            Text("Memo")
+                                .allowsHitTesting(false) // タップ判定を無効化
+                                .foregroundColor(Color(uiColor: .placeholderText))
+                                .padding(6)
                         }
-                        .padding(10)
-                        
-                }//ScrollView
-                .onTapGesture {
-                    focusedField = .ideaMemo
-                }
+                    }
+                    .padding(10)
+                
+                
+                
                 
             }
             .onChange(of: ideaMemo, initial: false){
