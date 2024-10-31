@@ -14,11 +14,12 @@ struct TwoPageView: View {
     @State var deleteAlert: Bool = false
     
     @FocusState private var focusedField: Field?
+    @State private var keyboardHeight: CGFloat = 0
     
     let screenHeight: CGFloat
+    let screenSize = UIScreen.main.bounds
     
     init() {
-        let screenSize = UIScreen.main.bounds
         self.screenHeight = screenSize.height
         
         if let memoRecord = UserDefaults.standard.string(forKey: "ideaMemo"){
@@ -32,27 +33,46 @@ struct TwoPageView: View {
         NavigationStack{
             ZStack{
                 Color.background
-                
-                
-                TextEditor(text: $ideaMemo)
-                    .focused($focusedField, equals: .ideaMemo)
-                    .frame(minHeight: screenHeight) // 初期の高さを設定
-                    .frame(maxHeight: .infinity) // 無限大に広がるようにする
-                    .foregroundColor(.text)
-                    .overlay(alignment: .topLeading) {
-                        if ideaMemo.isEmpty {
-                            Text("Memo")
-                                .allowsHitTesting(false) // タップ判定を無効化
-                                .foregroundColor(Color(uiColor: .placeholderText))
-                                .padding(6)
+                VStack{
+                    TextEditor(text: $ideaMemo)
+                        .focused($focusedField, equals: .ideaMemo)
+                        .frame(minHeight: (screenHeight / 2) - keyboardHeight) // 初期の高さを設定
+                        .foregroundColor(.text)
+                        .overlay(alignment: .topLeading) {
+                            if ideaMemo.isEmpty {
+                                Text("Memo")
+                                    .allowsHitTesting(false) // タップ判定を無効化
+                                    .foregroundColor(Color(uiColor: .placeholderText))
+                                    .padding(6)
+                            }
                         }
-                    }
-                    .padding(10)
-                
-                
-                
-                
+                        .padding(.horizontal, 10)
+                        .animation(.easeOut(duration: 0.3), value: keyboardHeight)
+//                    Spacer()
+//                        .onTapGesture {
+//                            focusedField = .ideaMemo
+//                            print("tap")
+//                        }
+                }
             }
+            .onAppear {
+                // キーボードの高さを監視
+                NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { notification in
+                    if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect {
+                        keyboardHeight = keyboardFrame.height - 100
+                        print("hello")
+                    }
+                }
+                NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { _ in
+                    keyboardHeight = 0
+                    print("good bye")
+                }
+            }
+            .onDisappear {
+                NotificationCenter.default.removeObserver(self)
+            }
+            
+            
             .onChange(of: ideaMemo, initial: false){
                 isChanged = true
                 UserDefaults.standard.setValue(ideaMemo, forKey: "ideaMemo")
